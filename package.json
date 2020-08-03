@@ -1,0 +1,31 @@
+{
+  "name": "linux-academy-cypress-tests",
+  "version": "1.0.0",
+  "description": "Automation tests for Linux Academy website using cypress",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "keywords": [
+    "Cypress",
+    "Javascript"
+  ],
+  "author": "Asad Hasan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
+  }
+}
