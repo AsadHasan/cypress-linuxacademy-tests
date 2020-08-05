@@ -3,6 +3,11 @@ describe("Linux academy", () => {
     cy.visit("https://linuxacademy.com/");
   });
 
+  it("Should conform to a11y accessibility rules", () => {
+    cy.injectAxe();
+    cy.checkA11y();
+  });
+
   it("Should contain 'Hands-On Labs'", () => {
     cy.contains("Hands-On Labs");
   });

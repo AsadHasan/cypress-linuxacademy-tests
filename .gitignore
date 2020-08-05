@@ -3,4 +3,7 @@ node_modules
 cypress/screenshots
 cypress/videos
 
+# Currently these tests don't use them, but they are auto-generated each time on 'cypress open'
+cypress/fixtures 
+cypress/plugins
 
