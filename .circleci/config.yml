@@ -3,7 +3,7 @@ jobs:
   cypress:
     working_directory: ~/linux-academy-cypress-tests
     machine:
-      image: cimg/base:2020.01
+      image: ubuntu-1604:202007-01
     steps:
       - checkout
       - run:
