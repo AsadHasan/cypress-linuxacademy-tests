@@ -2,11 +2,10 @@ version: 2.1
 jobs:
   cypress:
     working_directory: ~/linux-academy-cypress-tests
-    docker:
-      - image: cimg/base:2020.01
+    machine:
+      image: cimg/base:2020.01
     steps:
       - checkout
-      - setup_remote_docker
       - run:
           name: Run Cypress tests
           command: ./execute_tests.sh
